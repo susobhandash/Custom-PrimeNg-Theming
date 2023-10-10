@@ -5,7 +5,7 @@
   </div>
   <div class="p-toolbar-group-end">
     <button
-      class="icon-button secondary mr-2"
+      class="icon-button primary mr-2"
       (click)="themeModeToggled()"
       *ngIf="themeMode === themeModes.Light"
     >
@@ -18,7 +18,7 @@
     >
       <span class="pi pi-sun"></span>
     </button>
-    <button class="icon-button secondary mr-2" (click)="op.toggle($event)">
+    <button class="icon-button tertiary mr-2" (click)="op.toggle($event)">
       <span class="pi pi-palette"></span>
     </button>
   </div>
@@ -52,7 +52,7 @@
     </span>
     <span class="text">Get Albums</span>
   </button>
-  <button class="icon-button tertiary">
+  <button class="icon-button">
     <span class="pi pi-reply"></span>
   </button>
 </div>
