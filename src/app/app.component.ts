@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ListboxChangeEvent } from 'primeng/listbox';
+import { ThemeService } from './services/theme-service';
 
 export interface ThemeOption {
   text: string;
@@ -43,10 +43,10 @@ export class AppComponent {
       text: 'Blue',
       value: ThemeOptions.Blue,
     },
-    {
-      text: 'Dark Blue',
-      value: ThemeOptions.DarkBlue,
-    },
+    // {
+    //   text: 'Dark Blue',
+    //   value: ThemeOptions.DarkBlue,
+    // },
     {
       text: 'Aqua',
       value: ThemeOptions.Aqua,
@@ -55,67 +55,64 @@ export class AppComponent {
       text: 'Green',
       value: ThemeOptions.Green,
     },
-    {
-      text: 'Dark Green',
-      value: ThemeOptions.DarkGreen,
-    },
-    {
-      text: 'Teal',
-      value: ThemeOptions.Teal,
-    },
-    {
-      text: 'Purple',
-      value: ThemeOptions.Purple,
-    },
-    {
-      text: 'Orange',
-      value: ThemeOptions.Orange,
-    },
-    {
-      text: 'Violet',
-      value: ThemeOptions.Violet,
-    },
-    {
-      text: 'Pink Red',
-      value: ThemeOptions.PinkRed,
-    },
-    {
-      text: 'Yellow Brown',
-      value: ThemeOptions.YellowBrown,
-    },
-    {
-      text: 'Gold Brown',
-      value: ThemeOptions.Brown,
-    },
+    // {
+    //   text: 'Dark Green',
+    //   value: ThemeOptions.DarkGreen,
+    // },
+    // {
+    //   text: 'Teal',
+    //   value: ThemeOptions.Teal,
+    // },
+    // {
+    //   text: 'Purple',
+    //   value: ThemeOptions.Purple,
+    // },
+    // {
+    //   text: 'Orange',
+    //   value: ThemeOptions.Orange,
+    // },
+    // {
+    //   text: 'Violet',
+    //   value: ThemeOptions.Violet,
+    // },
+    // {
+    //   text: 'Pink Red',
+    //   value: ThemeOptions.PinkRed,
+    // },
+    // {
+    //   text: 'Yellow Brown',
+    //   value: ThemeOptions.YellowBrown,
+    // },
+    // {
+    //   text: 'Gold Brown',
+    //   value: ThemeOptions.Brown,
+    // },
   ];
 
   activeTheme: ThemeOption = this.themeOptions[0];
   themeMode: ThemeModes = ThemeModes.Dark;
   themeModes = ThemeModes;
 
-  constructor() {
+  constructor(private themeService: ThemeService) {
     this.themeChanged();
     this.themeModeToggled();
   }
 
   themeChanged() {
-    console.log(this.activeTheme);
-
-    this.themeOptions.forEach((theme: ThemeOption) => {
-      document.querySelector('body')?.classList.remove(theme.value);
-    });
-
-    document.querySelector('body')?.classList.add(this.activeTheme.value);
+    document.body.className = '';
+    const className = this.activeTheme.value + '-' + this.themeMode;
+    this.themeService.switchTheme(className);
   }
 
   themeModeToggled() {
-    document.querySelector('body')?.classList.remove(this.themeMode);
+    document.body.className = '';
     if (this.themeMode === ThemeModes.Light) {
       this.themeMode = ThemeModes.Dark;
     } else {
       this.themeMode = ThemeModes.Light;
     }
 
-    document.querySelector('body')?.classList.add(this.themeMode);
+    const className = this.activeTheme.value + '-' + this.themeMode;
+    this.themeService.switchTheme(className);
   }
 }

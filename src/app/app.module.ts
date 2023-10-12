@@ -11,9 +11,12 @@ import { OverlayPanelModule } from 'primeng/overlaypanel';
 import { ToolbarModule } from 'primeng/toolbar';
 import { ButtonModule } from 'primeng/button';
 import { ListboxModule } from 'primeng/listbox';
+import { TabViewModule } from 'primeng/tabview';
+
+import { ButtonViewComponent } from './components/button-view/button-view.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ButtonViewComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -29,6 +32,7 @@ import { ListboxModule } from 'primeng/listbox';
     ToolbarModule,
     ButtonModule,
     ListboxModule,
+    TabViewModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

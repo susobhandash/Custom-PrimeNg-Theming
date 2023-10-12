@@ -29,30 +29,14 @@
     [(ngModel)]="activeTheme"
     optionLabel="text"
     [style]="{ width: '15rem' }"
-    (onChange)="themeChanged()"
+    (onChange)="op.toggle($event); themeChanged()"
   ></p-listbox>
 </p-overlayPanel>
 
 <div class="container">
-  <button class="button primary mr-md">
-    <span class="icon">
-      <span class="pi pi-home"></span>
-    </span>
-    <span class="text">Logout</span>
-  </button>
-  <button class="button secondary mr-md">
-    <span class="icon">
-      <span class="pi pi-bars"></span>
-    </span>
-    <span class="text">Login With Google</span>
-  </button>
-  <button class="button tertiary mr-md">
-    <span class="icon">
-      <span class="pi pi-sun"></span>
-    </span>
-    <span class="text">Get Albums</span>
-  </button>
-  <button class="icon-button">
-    <span class="pi pi-reply"></span>
-  </button>
+  <p-tabView>
+    <p-tabPanel header="Buttons">
+      <app-button-view></app-button-view>
+    </p-tabPanel>
+  </p-tabView>
 </div>

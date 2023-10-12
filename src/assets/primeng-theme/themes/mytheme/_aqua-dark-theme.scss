@@ -1,0 +1,108 @@
+// Theme Specific Variables
+$primaryColor: #81cfff; //14
+$primaryDarkColor: #bcc8d3; //15
+$primaryDarkerColor: #81cfff; //14
+$primaryTextColor: #2b3136; //2
+
+$colors: (
+  "blue": #2196f3,
+  "green": #4caf50,
+  "yellow": #fbc02d,
+  "cyan": #00bcd4,
+  "pink": #e91e63,
+  "indigo": #3f51b5,
+  "teal": #009688,
+  "orange": #f57c00,
+  "bluegray": #607d8b,
+  "purple": #9c27b0,
+  "red": #ff4032,
+  "primary": $primaryColor,
+);
+
+// Mandatory Designer Variables
+@import "./variables/general";
+@import "./variables/form";
+@import "./variables/button";
+@import "./variables/panel";
+@import "./variables/_data";
+@import "./variables/_overlay";
+@import "./variables/_message";
+@import "./variables/_menu";
+@import "./variables/_media";
+@import "./variables/_misc";
+
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  --mc1: #1f1f1f;
+  --mc2: #2b3136;
+  --mc2t: 43, 49, 54;
+  --mc3: #3b434a;
+  --mc4: #e4f3ff;
+  --mc5: #e4f3ff;
+  --mc6: #bcc8d3;
+  --mc7: #81cfff;
+  --mc8: #2b3136;
+  --mc9: #3b434a;
+  --mc10: #004c6d;
+  --mc11: #e4f3ff;
+  --mc12: #e4f3ff;
+  --mc13: #e4f3ff;
+  --mc14: #81cfff;
+  --mc15: #bcc8d3;
+  --mc16: #546069;
+  --mc17: #546069;
+  --mc18: #546069;
+  --mc19: #81cfff;
+  --mc20: #81cfff;
+  --mc21: #1f1f1f;
+  --mc22: rgba(0, 0, 0, 0.6);
+  --mc23: #ffffff;
+  --mc24: #ffb2be;
+  --mc25: #b2c8e8;
+  --mc26: #5fbaff;
+  --mc27: #00344b;
+  --mc28: #2b3136;
+  --surface-a: #1e1e1e;
+  --surface-b: #121212;
+  --surface-c: hsla(0, 0%, 100%, 0.04);
+  --surface-d: hsla(0, 0%, 100%, 0.12);
+  --surface-e: #1e1e1e;
+  --surface-f: #262626;
+  --text-color: rgba(255, 255, 255, 0.87);
+  --text-color-secondary: rgba(255, 255, 255, 0.6);
+  --primary-color: #81cfff; // Var
+  --primary-color-text: #2b3136; // Var
+  --surface-0: #20262e;
+  --surface-50: #363c43;
+  --surface-100: #4d5158;
+  --surface-200: #63676d;
+  --surface-300: #797d82;
+  --surface-400: #909397;
+  --surface-500: #a6a8ab;
+  --surface-600: #bcbec0;
+  --surface-700: #d2d4d5;
+  --surface-800: #e9e9ea;
+  --surface-900: #ffffff;
+  --content-padding: #{$panelContentPadding};
+  --inline-spacing: #{$inlineSpacing};
+  --border-radius: #{$borderRadius};
+  --surface-ground: #20262e;
+  --surface-section: #20262e;
+  --surface-card: #2a323d;
+  --surface-overlay: #2a323d;
+  --surface-border: #3f4b5b;
+  --surface-hover: rgba(255, 255, 255, 0.04);
+  --maskbg: #{$maskBg};
+  --highlight-bg: #{$highlightBg};
+  --highlight-text-color: #{$highlightTextColor};
+  --focus-ring: #{$focusShadow};
+  color-scheme: dark;
+}
+
+@import "./_fonts";
+@import "../../theme-base/_components";
+@import "./_extensions";

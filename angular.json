@@ -30,8 +30,47 @@
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
-              "node_modules/primeng/resources/primeng.min.css"
+              "node_modules/primeng/resources/primeng.min.css",
+              {
+                "input": "src/assets/primeng-theme/themes/mytheme/_red-light-theme.scss",
+                "bundleName": "red-light-theme",
+                "inject": false
+              },
+              {
+                "input": "src/assets/primeng-theme/themes/mytheme/_red-dark-theme.scss",
+                "bundleName": "red-dark-theme",
+                "inject": false
+              },
+              {
+                "input": "src/assets/primeng-theme/themes/mytheme/_blue-light-theme.scss",
+                "bundleName": "blue-light-theme",
+                "inject": false
+              },
+              {
+                "input": "src/assets/primeng-theme/themes/mytheme/_blue-dark-theme.scss",
+                "bundleName": "blue-dark-theme",
+                "inject": false
+              },
+              {
+                "input": "src/assets/primeng-theme/themes/mytheme/_aqua-light-theme.scss",
+                "bundleName": "aqua-light-theme",
+                "inject": false
+              },
+              {
+                "input": "src/assets/primeng-theme/themes/mytheme/_aqua-dark-theme.scss",
+                "bundleName": "aqua-dark-theme",
+                "inject": false
+              },
+              {
+                "input": "src/assets/primeng-theme/themes/mytheme/_green-light-theme.scss",
+                "bundleName": "green-light-theme",
+                "inject": false
+              },
+              {
+                "input": "src/assets/primeng-theme/themes/mytheme/_green-dark-theme.scss",
+                "bundleName": "green-dark-theme",
+                "inject": false
+              }
             ],
             "scripts": [],
             "serviceWorker": true,

@@ -1,28 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import "primeicons/primeicons.css";
 
-@import "./assets/custom-themes/blue";
-@import "./assets/custom-themes/dark-green";
-@import "./assets/custom-themes/green";
-@import "./assets/custom-themes/orange";
-@import "./assets/custom-themes/pink-red";
-@import "./assets/custom-themes/purple";
-@import "./assets/custom-themes/red";
-@import "./assets/custom-themes/teal";
-@import "./assets/custom-themes/yellow-brown";
-@import "./assets/custom-themes/aqua";
-@import "./assets/custom-themes/violet";
-@import "./assets/custom-themes/dark-blue";
-@import "./assets/custom-themes/gold-brown";
+* {
+  box-sizing: border-box;
+}
 
 body {
-  display: flex;
-  flex-direction: column;
   margin: 0;
   padding: 0;
   height: 100vh;
   width: 100vw;
-  background: var(--mc1);
+  background: var(--mc2);
   color: var(--mc5);
 
   p-toolbar {
@@ -40,9 +28,83 @@ body {
 
   .container {
     flex: 1 1 auto;
-    background: var(--mc1);
+    background: var(--surface-ground);
     padding: 16px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    > p-tabview {
+      display: flex;
+      flex: 1 1 auto;
+
+      > .p-tabview {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+
+        .p-tabview-nav {
+          background-color: var(--surface-card);
+
+          > li.p-highlight .p-tabview-nav-link {
+            background-color: var(--surface-card);
+            transition: none;
+          }
+        }
+
+        > .p-tabview-panels {
+          display: flex;
+          flex: 1 1 auto;
+          overflow: auto;
+          background: var(--surface-card);
+          border-radius: 16px;
+          margin-top: 10px;
+          padding: 16px;
+
+          > p-tabpanel {
+            display: contents;
+            > .p-tabview-panel:not([hidden]) {
+              display: flex;
+              flex: 1 1 auto;
+
+              > app-button-view {
+                display: flex;
+                flex: 1 1 auto;
+
+                > div {
+                  display: flex;
+                  flex: 1 1 auto;
+                  flex-direction: column;
+                  overflow: auto;
+                  gap: 16px;
+
+                  > div {
+                    display: flex;
+                    gap: 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // > div {
+    //   display: flex;
+    //   gap: 16px;
+    // }
   }
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  min-width: 0;
+  height: 100%;
+  width: 100%;
 }
 
 h2 {
@@ -222,5 +284,13 @@ button.icon-button {
         color: var(--mc14) !important;
       }
     }
+  }
+}
+
+// Primeng
+.p-button {
+  font-size: 14px;
+  &:not(.p-button-rounded) {
+    border-radius: 5px;
   }
 }
