@@ -10,8 +10,12 @@ body {
   padding: 0;
   height: 100vh;
   width: 100vw;
-  background: var(--mc2);
-  color: var(--mc5);
+  background-color: var(--surface-ground);
+  font-weight: 400;
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  // background: var(--mc2);
+  // color: var(--mc5);
 
   p-toolbar {
     z-index: 1;
@@ -28,7 +32,7 @@ body {
 
   .container {
     flex: 1 1 auto;
-    background: var(--surface-ground);
+    // background: var(--surface-ground);
     padding: 16px;
     display: flex;
     width: 100%;
@@ -38,29 +42,26 @@ body {
     > p-tabview {
       display: flex;
       flex: 1 1 auto;
+      width: 100%;
 
       > .p-tabview {
         display: flex;
         flex-direction: column;
         flex: 1 1 auto;
+        width: 100%;
 
         .p-tabview-nav {
-          background-color: var(--surface-card);
-
-          > li.p-highlight .p-tabview-nav-link {
-            background-color: var(--surface-card);
-            transition: none;
-          }
+          width: 100%;
         }
 
         > .p-tabview-panels {
+          width: 100%;
           display: flex;
           flex: 1 1 auto;
           overflow: auto;
-          background: var(--surface-card);
-          border-radius: 16px;
-          margin-top: 10px;
-          padding: 16px;
+          padding: 0px;
+          margin-top: 16px;
+          background: transparent;
 
           > p-tabpanel {
             display: contents;
@@ -78,10 +79,36 @@ body {
                   flex-direction: column;
                   overflow: auto;
                   gap: 16px;
+                  padding: 16px 8px;
+                  border-radius: var(--border-radius);
+                  background-color: var(--surface-card);
 
                   > div {
                     display: flex;
                     gap: 10px;
+                    flex-wrap: wrap;
+                    padding: 16px 8px;
+                    padding-top: 0;
+                    border-bottom: 1px solid var(--surface-200);
+                  }
+                }
+              }
+
+              > app-progress-view {
+                height: 100%;
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                > div {
+                  flex: 1 1 0;
+                  width: 100%;
+
+                  > * {
+                    position: relative;
+                    top: calc(50% - 12px);
                   }
                 }
               }
@@ -115,6 +142,11 @@ h2 {
 .mr-2,
 .mr-md {
   margin-right: 16px;
+}
+
+.mb-2,
+.mb-md {
+  margin-bottom: 16px;
 }
 
 .secondary-bg {
@@ -293,4 +325,9 @@ button.icon-button {
   &:not(.p-button-rounded) {
     border-radius: 5px;
   }
+}
+
+.p-listbox {
+  height: 300px;
+  overflow: auto;
 }

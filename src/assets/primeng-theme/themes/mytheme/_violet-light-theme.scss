@@ -1,8 +1,8 @@
-// Theme Specific Variables
-$primaryColor: #2196f3;
-$primaryDarkColor: #1e88e5;
-$primaryDarkerColor: #1976d2;
-$primaryTextColor: #ffffff;
+  // Theme Specific Variables
+$primaryColor: #6d1aff;//14
+$primaryDarkColor: #6b5778;//15
+$primaryDarkerColor: #6d1aff;//14
+$primaryTextColor: #f7f2f7;//2
 
 $colors: (
   "blue": #2196f3,
@@ -31,54 +31,52 @@ $colors: (
 @import "./variables/_media";
 @import "./variables/_misc";
 
-//panel
-$panelHeaderBorderColor: $shade300 !default;
-$panelHeaderBorder: 1px solid $shade300 !default;
-$panelHeaderBg: $shade100 !default;
-$panelHeaderTextColor: $shade700 !default;
-$panelHeaderFontWeight: 600 !default;
-$panelHeaderPadding: 0.75rem !default;
-$panelToggleableHeaderPadding: 0.5rem 1rem !default;
-
-$panelHeaderHoverBg: $shade200 !default;
-$panelHeaderHoverBorderColor: $shade300 !default;
-$panelHeaderTextHoverColor: $shade700 !default;
-
-$panelContentBorderColor: $shade300 !default;
-$panelContentBorder: 1px solid $shade300 !default;
-$panelContentBg: $shade000 !default;
-$panelContentEvenRowBg: scale-color($shade000, $lightness: -1%) !default;
-$panelContentTextColor: $shade700 !default;
-$panelContentPadding: 0.5rem !default;
-
-$panelFooterBorder: 1px solid $shade300 !default;
-$panelFooterBg: $shade000 !default;
-$panelFooterTextColor: $shade700 !default;
-$panelFooterPadding: 0.5rem 1rem !default;
-
-//overlays
-$overlayContentBorder: 0 none !default;
-$overlayContentBg: $panelContentBg !default;
-$overlayContainerShadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),
-  0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12) !default;
-
 :root {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
-  --surface-a: #ffffff;
-  --surface-b: #f8f9fa;
-  --surface-c: #e9ecef;
-  --surface-d: #dee2e6;
-  --surface-e: #ffffff;
-  --surface-f: #ffffff;
-  --text-color: #495057;
+  --mc1: #ffffff;
+  --mc2: #f7f2f7;
+  --mc2t: 247, 242, 247;
+  --mc3: #e7dff2;
+  --mc4: #251431;
+  --mc5: #251431;
+  --mc6: #6b5778;
+  --mc7: #6d1aff;
+  --mc8: #e7dff2;
+  --mc9: #d9ccea;
+  --mc10: #cfbdff;
+  --mc11: #251431;
+  --mc12: #251431;
+  --mc13: #251431;
+  --mc14: #6d1aff;
+  --mc15: #6b5778;
+  --mc16: #cfbdff;
+  --mc17: #cfbdff;
+  --mc18: #cfbdff;
+  --mc19: #5300cd;
+  --mc20: #6d1aff;
+  --mc21: #ffffff;
+  --mc22: rgba(0, 0, 0, 0.6);
+  --mc23: #ffffff;
+  --mc24: #f6f4b9;
+  --mc25: #cfbdff;
+  --mc26: #965aff;
+  --mc27: #3a0093;
+  --mc28: #f5eeff;
+  --surface-a: var(--mc1);
+  --surface-b: var(--mc2);
+  --surface-c: var(--mc2);
+  --surface-d: var(--mc27);
+  --surface-e: var(--mc1);
+  --surface-f: var(--mc1)
+  --text-color: #212529;
   --text-color-secondary: #6c757d;
-  --primary-color: #2196f3;
-  --primary-color-text: #ffffff;
-  --surface-0: #ffffff;
+  --primary-color: #6d1aff; // Var 14
+  --primary-color-text: #f7f2f7; // Var 2
+  --surface-0: var(--mc1);
   --surface-50: #fafafa;
   --surface-100: #f5f5f5;
   --surface-200: #eeeeee;
@@ -92,7 +90,7 @@ $overlayContainerShadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),
   --content-padding: #{$panelContentPadding};
   --inline-spacing: #{$inlineSpacing};
   --border-radius: #{$borderRadius};
-  --surface-ground: #f8f9fa;
+  --surface-ground: #efefef;
   --surface-section: #ffffff;
   --surface-card: #ffffff;
   --surface-overlay: #ffffff;
@@ -102,5 +100,10 @@ $overlayContainerShadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),
   --highlight-bg: #{$highlightBg};
   --highlight-text-color: #{$highlightTextColor};
   --focus-ring: #{$focusShadow};
-  color-scheme: light;
+  color-scheme: dark;
 }
+
+@import './_fonts';
+@import '../../theme-base/_components';
+@import './_extensions';
+

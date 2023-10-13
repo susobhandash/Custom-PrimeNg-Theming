@@ -31,6 +31,37 @@ $colors: (
 @import "./variables/_media";
 @import "./variables/_misc";
 
+//panel
+$panelHeaderBorderColor: $shade300 !default;
+$panelHeaderBorder: 1px solid $shade300 !default;
+$panelHeaderBg: $shade100 !default;
+$panelHeaderTextColor: $shade700 !default;
+$panelHeaderFontWeight: 600 !default;
+$panelHeaderPadding: 0.75rem !default;
+$panelToggleableHeaderPadding: 0.5rem 1rem !default;
+
+$panelHeaderHoverBg: $shade200 !default;
+$panelHeaderHoverBorderColor: $shade300 !default;
+$panelHeaderTextHoverColor: $shade700 !default;
+
+$panelContentBorderColor: $shade300 !default;
+$panelContentBorder: 1px solid $shade300 !default;
+$panelContentBg: $shade000 !default;
+$panelContentEvenRowBg: scale-color($shade000, $lightness: -1%) !default;
+$panelContentTextColor: $shade700 !default;
+$panelContentPadding: 0.5rem !default;
+
+$panelFooterBorder: 1px solid $shade300 !default;
+$panelFooterBg: $shade000 !default;
+$panelFooterTextColor: $shade700 !default;
+$panelFooterPadding: 0.5rem 1rem !default;
+
+//overlays
+$overlayContentBorder: 0 none !default;
+$overlayContentBg: $panelContentBg !default;
+$overlayContainerShadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),
+  0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12) !default;
+
 :root {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";

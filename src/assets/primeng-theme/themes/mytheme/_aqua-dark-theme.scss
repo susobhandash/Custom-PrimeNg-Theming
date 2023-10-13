@@ -1,8 +1,14 @@
 // Theme Specific Variables
-$primaryColor: #81cfff; //14
-$primaryDarkColor: #bcc8d3; //15
-$primaryDarkerColor: #81cfff; //14
-$primaryTextColor: #2b3136; //2
+$primaryColor: #81cfff !default; //14
+$primaryDarkColor: #bcc8d3 !default; //15
+$primaryDarkerColor: #81cfff !default; //14
+$primaryTextColor: #2b3136 !default; //2
+$primaryLightColor: #bcc8d3 !default; // 15
+$primaryAccentBg: #81cfff !default; // 14
+
+$highlightBg: $primaryColor !default;
+$highlightTextColor: $primaryTextColor !default;
+$highlightFocusBg: darken($primaryColor, 8%) !default;
 
 $colors: (
   "blue": #2196f3,
@@ -19,17 +25,7 @@ $colors: (
   "primary": $primaryColor,
 );
 
-// Mandatory Designer Variables
-@import "./variables/general";
-@import "./variables/form";
-@import "./variables/button";
-@import "./variables/panel";
-@import "./variables/_data";
-@import "./variables/_overlay";
-@import "./variables/_message";
-@import "./variables/_menu";
-@import "./variables/_media";
-@import "./variables/_misc";
+@import "./dark-variables";
 
 :root {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,

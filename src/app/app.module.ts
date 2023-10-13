@@ -12,11 +12,24 @@ import { ToolbarModule } from 'primeng/toolbar';
 import { ButtonModule } from 'primeng/button';
 import { ListboxModule } from 'primeng/listbox';
 import { TabViewModule } from 'primeng/tabview';
+import { PanelModule } from 'primeng/panel';
+import { AccordionModule } from 'primeng/accordion';
+import { ProgressBarModule } from 'primeng/progressbar';
+import { ToastModule } from 'primeng/toast';
+import { MessagesModule } from 'primeng/messages';
+import { RippleModule } from 'primeng/ripple';
 
 import { ButtonViewComponent } from './components/button-view/button-view.component';
+import { CardViewComponent } from './components/card-view/card-view.component';
+import { ProgressViewComponent } from './components/progress-view/progress-view.component';
 
 @NgModule({
-  declarations: [AppComponent, ButtonViewComponent],
+  declarations: [
+    AppComponent,
+    ButtonViewComponent,
+    CardViewComponent,
+    ProgressViewComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -33,6 +46,12 @@ import { ButtonViewComponent } from './components/button-view/button-view.compon
     ButtonModule,
     ListboxModule,
     TabViewModule,
+    PanelModule,
+    AccordionModule,
+    ProgressBarModule,
+    ToastModule,
+    MessagesModule,
+    RippleModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

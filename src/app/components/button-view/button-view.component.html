@@ -42,6 +42,7 @@
       [rounded]="true"
       [outlined]="true"
       [raised]="true"
+      (click)="showSuccess()"
     ></p-button>
     <p-button
       label="Info"
@@ -49,6 +50,7 @@
       [rounded]="true"
       [outlined]="true"
       [raised]="true"
+      (click)="showInfo()"
     ></p-button>
     <p-button
       label="Warning"
@@ -56,6 +58,7 @@
       [rounded]="true"
       [outlined]="true"
       [raised]="true"
+      (click)="showWarn()"
     ></p-button>
     <p-button
       label="Help"
@@ -70,6 +73,7 @@
       [rounded]="true"
       [outlined]="true"
       [raised]="true"
+      (click)="showError()"
     ></p-button>
   </div>
   <div>
@@ -92,6 +96,7 @@
       [rounded]="true"
       [raised]="true"
       [text]="true"
+      (click)="showSuccess()"
     ></p-button>
     <p-button
       label="Info"
@@ -99,6 +104,7 @@
       [rounded]="true"
       [raised]="true"
       [text]="true"
+      (click)="showInfo()"
     ></p-button>
     <p-button
       label="Warning"
@@ -106,6 +112,7 @@
       [rounded]="true"
       [raised]="true"
       [text]="true"
+      (click)="showWarn()"
     ></p-button>
     <p-button
       label="Help"
@@ -120,6 +127,7 @@
       [rounded]="true"
       [raised]="true"
       [text]="true"
+      (click)="showError()"
     ></p-button>
   </div>
   <div>
@@ -135,18 +143,21 @@
       severity="success"
       [rounded]="true"
       [text]="true"
+      (click)="showSuccess()"
     ></p-button>
     <p-button
       label="Info"
       severity="info"
       [rounded]="true"
       [text]="true"
+      (click)="showInfo()"
     ></p-button>
     <p-button
       label="Warning"
       severity="warning"
       [rounded]="true"
       [text]="true"
+      (click)="showWarn()"
     ></p-button>
     <p-button
       label="Help"
@@ -159,6 +170,7 @@
       severity="danger"
       [rounded]="true"
       [text]="true"
+      (click)="showError()"
     ></p-button>
   </div>
   <div>
@@ -168,29 +180,89 @@
       [rounded]="true"
       severity="secondary"
     ></p-button>
-    <p-button label="Success" [rounded]="true" severity="success"></p-button>
-    <p-button label="Info" [rounded]="true" severity="info"></p-button>
-    <p-button label="Warning" [rounded]="true" severity="warning"></p-button>
+    <p-button
+      label="Success"
+      [rounded]="true"
+      severity="success"
+      (click)="showSuccess()"
+    ></p-button>
+    <p-button
+      label="Info"
+      [rounded]="true"
+      severity="info"
+      (click)="showInfo()"
+    ></p-button>
+    <p-button
+      label="Warning"
+      [rounded]="true"
+      severity="warning"
+      (click)="showWarn()"
+    ></p-button>
     <p-button label="Help" [rounded]="true" severity="help"></p-button>
-    <p-button label="Danger" [rounded]="true" severity="danger"></p-button>
+    <p-button
+      label="Danger"
+      [rounded]="true"
+      severity="danger"
+      (click)="showError()"
+    ></p-button>
   </div>
   <div>
     <p-button label="Primary" [raised]="true"></p-button>
     <p-button label="Secondary" [raised]="true" severity="secondary"></p-button>
-    <p-button label="Success" [raised]="true" severity="success"></p-button>
-    <p-button label="Info" [raised]="true" severity="info"></p-button>
-    <p-button label="Warning" [raised]="true" severity="warning"></p-button>
+    <p-button
+      label="Success"
+      [raised]="true"
+      severity="success"
+      (click)="showSuccess()"
+    ></p-button>
+    <p-button
+      label="Info"
+      [raised]="true"
+      severity="info"
+      (click)="showInfo()"
+    ></p-button>
+    <p-button
+      label="Warning"
+      [raised]="true"
+      severity="warning"
+      (click)="showWarn()"
+    ></p-button>
     <p-button label="Help" [raised]="true" severity="help"></p-button>
-    <p-button label="Danger" [raised]="true" severity="danger"></p-button>
+    <p-button
+      label="Danger"
+      [raised]="true"
+      severity="danger"
+      (click)="showError()"
+    ></p-button>
   </div>
   <div>
     <p-button label="Primary" [text]="true"></p-button>
     <p-button label="Secondary" [text]="true" severity="secondary"></p-button>
-    <p-button label="Success" [text]="true" severity="success"></p-button>
-    <p-button label="Info" [text]="true" severity="info"></p-button>
-    <p-button label="Warning" [text]="true" severity="warning"></p-button>
+    <p-button
+      label="Success"
+      [text]="true"
+      severity="success"
+      (click)="showSuccess()"
+    ></p-button>
+    <p-button
+      label="Info"
+      [text]="true"
+      severity="info"
+      (click)="showInfo()"
+    ></p-button>
+    <p-button
+      label="Warning"
+      [text]="true"
+      severity="warning"
+      (click)="showWarn()"
+    ></p-button>
     <p-button label="Help" [text]="true" severity="help"></p-button>
-    <p-button label="Danger" [text]="true" severity="danger"></p-button>
+    <p-button
+      label="Danger"
+      [text]="true"
+      severity="danger"
+      (click)="showError()"
+    ></p-button>
     <p-button label="Plain" [text]="true" [plain]="true"></p-button>
   </div>
   <div>
@@ -206,18 +278,21 @@
       [text]="true"
       [raised]="true"
       severity="success"
+      (click)="showSuccess()"
     ></p-button>
     <p-button
       label="Info"
       [text]="true"
       [raised]="true"
       severity="info"
+      (click)="showInfo()"
     ></p-button>
     <p-button
       label="Warning"
       [text]="true"
       [raised]="true"
       severity="warning"
+      (click)="showWarn()"
     ></p-button>
     <p-button
       label="Help"
@@ -230,6 +305,7 @@
       [text]="true"
       [raised]="true"
       severity="danger"
+      (click)="showError()"
     ></p-button>
     <p-button
       label="Plain"
@@ -245,20 +321,56 @@
       [outlined]="true"
       severity="secondary"
     ></p-button>
-    <p-button label="Success" [outlined]="true" severity="success"></p-button>
-    <p-button label="Info" [outlined]="true" severity="info"></p-button>
-    <p-button label="Warning" [outlined]="true" severity="warning"></p-button>
+    <p-button
+      label="Success"
+      [outlined]="true"
+      severity="success"
+      (click)="showSuccess()"
+    ></p-button>
+    <p-button
+      label="Info"
+      [outlined]="true"
+      severity="info"
+      (click)="showInfo()"
+    ></p-button>
+    <p-button
+      label="Warning"
+      [outlined]="true"
+      severity="warning"
+      (click)="showWarn()"
+    ></p-button>
     <p-button label="Help" [outlined]="true" severity="help"></p-button>
-    <p-button label="Danger" [outlined]="true" severity="danger"></p-button>
+    <p-button
+      label="Danger"
+      [outlined]="true"
+      severity="danger"
+      (click)="showError()"
+    ></p-button>
   </div>
   <div>
     <p-button icon="pi pi-check"></p-button>
     <p-button icon="pi pi-bookmark" severity="secondary"></p-button>
-    <p-button icon="pi pi-search" severity="success"></p-button>
-    <p-button icon="pi pi-reply" severity="info"></p-button>
-    <p-button icon="pi pi-bell" severity="warning"></p-button>
+    <p-button
+      icon="pi pi-search"
+      severity="success"
+      (click)="showSuccess()"
+    ></p-button>
+    <p-button
+      icon="pi pi-reply"
+      severity="info"
+      (click)="showInfo()"
+    ></p-button>
+    <p-button
+      icon="pi pi-bell"
+      severity="warning"
+      (click)="showWarn()"
+    ></p-button>
     <p-button icon="pi pi-heart" severity="help"></p-button>
-    <p-button icon="pi pi-times" severity="danger"></p-button>
+    <p-button
+      icon="pi pi-times"
+      severity="danger"
+      (click)="showError()"
+    ></p-button>
   </div>
   <div>
     <p-button icon="pi pi-check" [rounded]="true"></p-button>
@@ -271,11 +383,27 @@
       icon="pi pi-search"
       [rounded]="true"
       severity="success"
+      (click)="showSuccess()"
     ></p-button>
-    <p-button icon="pi pi-reply" [rounded]="true" severity="info"></p-button>
-    <p-button icon="pi pi-bell" [rounded]="true" severity="warning"></p-button>
+    <p-button
+      icon="pi pi-reply"
+      [rounded]="true"
+      severity="info"
+      (click)="showInfo()"
+    ></p-button>
+    <p-button
+      icon="pi pi-bell"
+      [rounded]="true"
+      severity="warning"
+      (click)="showWarn()"
+    ></p-button>
     <p-button icon="pi pi-heart" [rounded]="true" severity="help"></p-button>
-    <p-button icon="pi pi-times" [rounded]="true" severity="danger"></p-button>
+    <p-button
+      icon="pi pi-times"
+      [rounded]="true"
+      severity="danger"
+      (click)="showError()"
+    ></p-button>
   </div>
   <div>
     <p-button icon="pi pi-check" [rounded]="true" [outlined]="true"></p-button>
@@ -289,6 +417,7 @@
       icon="pi pi-search"
       [rounded]="true"
       severity="success"
+      (click)="showSuccess()"
       [outlined]="true"
     ></p-button>
     <p-button
@@ -296,11 +425,13 @@
       [rounded]="true"
       severity="info"
       [outlined]="true"
+      (click)="showInfo()"
     ></p-button>
     <p-button
       icon="pi pi-bell"
       [rounded]="true"
       severity="warning"
+      (click)="showWarn()"
       [outlined]="true"
     ></p-button>
     <p-button
@@ -314,6 +445,7 @@
       [rounded]="true"
       severity="danger"
       [outlined]="true"
+      (click)="showError()"
     ></p-button>
   </div>
   <div>
@@ -335,21 +467,24 @@
       [rounded]="true"
       [text]="true"
       [raised]="true"
-      severity="success "
+      severity="success"
+      (click)="showSuccess()"
     ></p-button>
     <p-button
       icon="pi pi-reply"
       [rounded]="true"
       [text]="true"
       [raised]="true"
-      severity="info "
+      severity="info"
+      (click)="showInfo()"
     ></p-button>
     <p-button
       icon="pi pi-bell"
       [rounded]="true"
       [text]="true"
       [raised]="true"
-      severity="warning "
+      severity="warning"
+      (click)="showWarn()"
     ></p-button>
     <p-button
       icon="pi pi-heart"
@@ -363,7 +498,8 @@
       [rounded]="true"
       [text]="true"
       [raised]="true"
-      severity="danger "
+      severity="danger"
+      (click)="showError()"
     ></p-button>
   </div>
   <div>
@@ -378,19 +514,22 @@
       icon="pi pi-search"
       [rounded]="true"
       [text]="true"
-      severity="success "
+      severity="success"
+      (click)="showSuccess()"
     ></p-button>
     <p-button
       icon="pi pi-reply"
       [rounded]="true"
       [text]="true"
-      severity="info "
+      severity="info"
+      (click)="showInfo()"
     ></p-button>
     <p-button
       icon="pi pi-bell"
       [rounded]="true"
       [text]="true"
-      severity="warning "
+      severity="warning"
+      (click)="showWarn()"
     ></p-button>
     <p-button
       icon="pi pi-heart"
@@ -402,7 +541,10 @@
       icon="pi pi-times"
       [rounded]="true"
       [text]="true"
-      severity="danger "
+      severity="danger"
+      (click)="showError()"
     ></p-button>
   </div>
 </div>
+
+<p-toast></p-toast>

@@ -70,6 +70,106 @@
                 "input": "src/assets/primeng-theme/themes/mytheme/_green-dark-theme.scss",
                 "bundleName": "green-dark-theme",
                 "inject": false
+              },
+              {
+                "input": "src/assets/primeng-theme/themes/mytheme/_indigo-light-theme.scss",
+                "bundleName": "indigo-light-theme",
+                "inject": false
+              },
+              {
+                "input": "src/assets/primeng-theme/themes/mytheme/_indigo-dark-theme.scss",
+                "bundleName": "indigo-dark-theme",
+                "inject": false
+              },
+              {
+                "input": "src/assets/primeng-theme/themes/mytheme/_teal-light-theme.scss",
+                "bundleName": "teal-light-theme",
+                "inject": false
+              },
+              {
+                "input": "src/assets/primeng-theme/themes/mytheme/_teal-dark-theme.scss",
+                "bundleName": "teal-dark-theme",
+                "inject": false
+              },
+              {
+                "input": "src/assets/primeng-theme/themes/mytheme/_orange-light-theme.scss",
+                "bundleName": "orange-light-theme",
+                "inject": false
+              },
+              {
+                "input": "src/assets/primeng-theme/themes/mytheme/_orange-dark-theme.scss",
+                "bundleName": "orange-dark-theme",
+                "inject": false
+              },
+              {
+                "input": "src/assets/primeng-theme/themes/mytheme/_violet-light-theme.scss",
+                "bundleName": "violet-light-theme",
+                "inject": false
+              },
+              {
+                "input": "src/assets/primeng-theme/themes/mytheme/_violet-dark-theme.scss",
+                "bundleName": "violet-dark-theme",
+                "inject": false
+              },
+              {
+                "input": "src/assets/primeng-theme/themes/mytheme/_purple-light-theme.scss",
+                "bundleName": "purple-light-theme",
+                "inject": false
+              },
+              {
+                "input": "src/assets/primeng-theme/themes/mytheme/_purple-dark-theme.scss",
+                "bundleName": "purple-dark-theme",
+                "inject": false
+              },
+              {
+                "input": "src/assets/primeng-theme/themes/mytheme/_brown-light-theme.scss",
+                "bundleName": "brown-light-theme",
+                "inject": false
+              },
+              {
+                "input": "src/assets/primeng-theme/themes/mytheme/_brown-dark-theme.scss",
+                "bundleName": "brown-dark-theme",
+                "inject": false
+              },
+              {
+                "input": "src/assets/primeng-theme/themes/mytheme/_dark-blue-light-theme.scss",
+                "bundleName": "dark-blue-light-theme",
+                "inject": false
+              },
+              {
+                "input": "src/assets/primeng-theme/themes/mytheme/_dark-blue-dark-theme.scss",
+                "bundleName": "dark-blue-dark-theme",
+                "inject": false
+              },
+              {
+                "input": "src/assets/primeng-theme/themes/mytheme/_dark-green-light-theme.scss",
+                "bundleName": "dark-green-light-theme",
+                "inject": false
+              },
+              {
+                "input": "src/assets/primeng-theme/themes/mytheme/_dark-green-dark-theme.scss",
+                "bundleName": "dark-green-dark-theme",
+                "inject": false
+              },
+              {
+                "input": "src/assets/primeng-theme/themes/mytheme/_pink-red-light-theme.scss",
+                "bundleName": "pink-red-light-theme",
+                "inject": false
+              },
+              {
+                "input": "src/assets/primeng-theme/themes/mytheme/_pink-red-dark-theme.scss",
+                "bundleName": "pink-red-dark-theme",
+                "inject": false
+              },
+              {
+                "input": "src/assets/primeng-theme/themes/mytheme/_yellow-brown-light-theme.scss",
+                "bundleName": "yellow-brown-light-theme",
+                "inject": false
+              },
+              {
+                "input": "src/assets/primeng-theme/themes/mytheme/_yellow-brown-dark-theme.scss",
+                "bundleName": "yellow-brown-dark-theme",
+                "inject": false
               }
             ],
             "scripts": [],

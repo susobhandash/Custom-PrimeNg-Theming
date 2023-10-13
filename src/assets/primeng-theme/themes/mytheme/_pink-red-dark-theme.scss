@@ -1,10 +1,10 @@
 // Theme Specific Variables
-$primaryColor: #a3c9ff !default; //14
-$primaryDarkColor: #c0c7d5 !default; //15
-$primaryDarkerColor: #a3c9ff !default; //14
-$primaryTextColor: #2d3137 !default; //2
-$primaryLightColor: #c0c7d5 !default; // 15
-$primaryAccentBg: #a3c9ff !default; // 14
+$primaryColor: #ffafd6 !default; //14
+$primaryDarkColor: #dac0ca !default; //15
+$primaryDarkerColor: #ffafd6 !default; //14
+$primaryTextColor: #3b2c33 !default; //2
+$primaryLightColor: #dac0ca !default; // 15
+$primaryAccentBg: #ffafd6 !default; // 14
 
 $highlightBg: $primaryColor !default;
 $highlightTextColor: $primaryTextColor !default;
@@ -34,34 +34,34 @@ $colors: (
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
   --mc1: #1f1f1f;
-  --mc2: #2d3137;
-  --mc2t: 43, 49, 54;
-  --mc3: #3c4149;
-  --mc4: #ebf1ff;
-  --mc5: #ebf1ff;
-  --mc6: #c0c7d5;
-  --mc7: #a3c9ff;
-  --mc8: #2d3137;
-  --mc9: #3c4149;
-  --mc10: #234776;
-  --mc11: #ebf1ff;
-  --mc12: #ebf1ff;
-  --mc13: #ebf1ff;
-  --mc14: #a3c9ff;
-  --mc15: #c0c7d5;
-  --mc16: #575f6b;
-  --mc17: #575f6b;
-  --mc18: #575f6b;
-  --mc19: #a3c9ff;
-  --mc20: #a3c9ff;
+  --mc2: #3b2c33;
+  --mc2t: 59, 44, 51;
+  --mc3: #4c3942;
+  --mc4: #ffecf2;
+  --mc5: #ffecf2;
+  --mc6: #dac0ca;
+  --mc7: #ffafd6;
+  --mc8: #3b2c33;
+  --mc9: #4c3942;
+  --mc10: #6c3353;
+  --mc11: #ffecf2;
+  --mc12: #ffecf2;
+  --mc13: #ffecf2;
+  --mc14: #ffafd6;
+  --mc15: #dac0ca;
+  --mc16: #6d5962;
+  --mc17: #6d5962;
+  --mc18: #6d5962;
+  --mc19: #ffafd6;
+  --mc20: #ffafd6;
   --mc21: #1f1f1f;
   --mc22: rgba(0, 0, 0, 0.6);
   --mc23: #ffffff;
-  --mc24: #f5b8af;
-  --mc25: #a3c9ff;
-  --mc26: #5fbaff;
-  --mc27: #00315c;
-  --mc28: #2d3137;
+  --mc24: #c6ffc7;
+  --mc25: #fcbcdb;
+  --mc26: #ff2f3b;
+  --mc27: #620043;
+  --mc28: #3c2c3;
   --surface-a: #1e1e1e;
   --surface-b: #121212;
   --surface-c: hsla(0, 0%, 100%, 0.04);
@@ -70,8 +70,8 @@ $colors: (
   --surface-f: #262626;
   --text-color: rgba(255, 255, 255, 0.87);
   --text-color-secondary: rgba(255, 255, 255, 0.6);
-  --primary-color: #a3c9ff; // Var
-  --primary-color-text: #2d3137; // Var
+  --primary-color: #ffafd6; // Var 14
+  --primary-color-text: #3b2c33; // Var 2
   --surface-0: #20262e;
   --surface-50: #363c43;
   --surface-100: #4d5158;
