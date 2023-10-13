@@ -35,7 +35,7 @@ export enum ThemeModes {
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'Custom Themes';
+  title = 'Susobhan - PrimeNg Custom Themes';
   themeOptions: ThemeOption[] = [
     {
       text: 'Blue',
