@@ -18,10 +18,12 @@ import { ProgressBarModule } from 'primeng/progressbar';
 import { ToastModule } from 'primeng/toast';
 import { MessagesModule } from 'primeng/messages';
 import { RippleModule } from 'primeng/ripple';
+import { CardModule } from 'primeng/card';
 
 import { ButtonViewComponent } from './components/button-view/button-view.component';
 import { CardViewComponent } from './components/card-view/card-view.component';
 import { ProgressViewComponent } from './components/progress-view/progress-view.component';
+import { HowToViewComponent } from './components/how-to-view/how-to-view.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,7 @@ import { ProgressViewComponent } from './components/progress-view/progress-view.
     ButtonViewComponent,
     CardViewComponent,
     ProgressViewComponent,
+    HowToViewComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,6 +55,7 @@ import { ProgressViewComponent } from './components/progress-view/progress-view.
     ToastModule,
     MessagesModule,
     RippleModule,
+    CardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

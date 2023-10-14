@@ -14,6 +14,21 @@ export class ThemeService {
 
     if (themeLink) {
       themeLink.href = theme + '.css';
+
+      setTimeout(() => {
+        const elem = document.querySelector(':root');
+        let cs = elem ? getComputedStyle(elem) : null;
+        if (cs) {
+          const themeColor = cs.getPropertyValue('--mc14');
+          const themeMeta = this.document.getElementById(
+            'theme-color'
+          ) as HTMLMetaElement;
+
+          if (themeMeta) {
+            themeMeta.content = themeColor;
+          }
+        }
+      }, 500);
     }
   }
 }

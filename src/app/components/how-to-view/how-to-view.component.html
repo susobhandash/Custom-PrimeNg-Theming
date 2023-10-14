@@ -1,0 +1,85 @@
+<p-card header="How to implement Custom PrimeNg Theme">
+  <p class="m-0">
+    Welcome to this section. Here I will laout the steps on how to implement a
+    custom PrimeNg theme into your angular application.
+  </p>
+  <p class="m-0">
+    First we need to download the Theme related SCSS files from PrimeNg. For
+    that you can visit
+    <a href="https://github.com/primefaces/primeng-sass-theme" _target="blank"
+      >this link</a
+    >. Copy the <i>'theme-base'</i> folder and put it under assets folder (may
+    be make a new folder like 'primeng-theme' under assests folder and put this
+    under nwly created folder). Now create another <i>'themes'</i> folder where
+    you can keep all your theme related variable, font and extension files.
+  </p>
+  <p>
+    Create 2 separate theme files, under <i>'themes'</i> folder, for Light and
+    Dark mode variables (<i>_dark-variables.scss</i> and
+    <i>_light-variables.scss</i>). These files will hold the variables that we
+    will use to customize the PrimeNg components.
+  </p>
+  <p>
+    Now under the <i>'themes'</i> folder, create another folder called
+    <i>'custom-themes'</i> that will house your custom theme files.
+  </p>
+  <p>
+    You can refer
+    <a
+      href="https://github.com/susobhandash/Custom-PrimeNg-Themeing"
+      _target="blank"
+      >this repo</a
+    >
+    to refer the content of what the above 2 dark and light variable files will
+    hold. You can also refer to any of the custom theme files and go through its
+    content, customize the colors as per your need. One thing to point out, each
+    of the custom theme files work upto line <i>17</i>. The rest of the CSS
+    variables are just reference colors.
+  </p>
+  <p>
+    Once above variable and custom theme files have bee setup along with proper
+    links to other PrimeNg SCSS files, we can move to next phase, where we will
+    integrate the theme switch logic. For that, first, you will need to add
+    reference links to these Custom Theme SCSS files in your
+    <i>angular.json</i> file like below.
+  </p>
+  <iframe
+    src="https://www.thiscodeworks.com/embed/652a55dea2ffb50013c318b2"
+    style="width: 100%; height: 225px"
+    frameborder="0"
+  ></iframe>
+  <p>Open the <i>index.html</i> file and add below line:</p>
+  <iframe
+    src="https://www.thiscodeworks.com/embed/652a56faa2ffb50013c318b6"
+    style="width: 100%; height: 110px"
+    frameborder="0"
+  ></iframe>
+  <p>
+    Once those has been set up, create a ThemeService file, and add below code:
+  </p>
+  <iframe
+    src="https://www.thiscodeworks.com/embed/652a5725a2ffb50013c318b7"
+    style="width: 100%; height: 350px"
+    frameborder="0"
+  ></iframe>
+  <p>
+    These will let you switch between your Theme files referenced in
+    <i>angular.json</i> file. Now add below code in your
+    <i>app.component.ts</i> or which ever file holds your Header Toolbar.
+  </p>
+  <iframe
+    src="https://www.thiscodeworks.com/embed/652a5804a2ffb50013c318b9"
+    style="width: 100%; height: 515px"
+    frameborder="0"
+  ></iframe>
+  <p>
+    Now you have option to just switch between different theme colors like
+    <i>red</i>, <i>green</i> etc as well as its Light and Dark mdoes as well,
+    separately. You just need to have separate files defined for them first.
+  </p>
+  <p>
+    The <i>themeChanged()</i> method will help toggle the Theme between
+    different color selections. The <i>themeModeToggled()</i> method will hep
+    toggle between Dark / Light mode of selected Theme color.
+  </p>
+</p-card>
