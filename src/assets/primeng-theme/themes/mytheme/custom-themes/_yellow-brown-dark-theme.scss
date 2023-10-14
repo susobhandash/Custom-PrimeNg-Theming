@@ -1,0 +1,50 @@
+// Theme Specific Variables
+$primaryColor: #dcc48c !default; //14
+$primaryDarkColor: #d6c4aa !default; //15
+$primaryDarkerColor: #dcc48c !default; //14
+$primaryTextColor: #372f24 !default; //2
+$primaryLightColor: #d6c4aa !default; // 15
+$primaryAccentBg: #dcc48c !default; // 14
+
+$highlightBg: $primaryColor !default;
+$highlightTextColor: $primaryTextColor !default;
+$highlightFocusBg: darken($primaryColor, 8%) !default;
+
+@import "../dark-variables";
+@import "../fonts";
+@import "../../../theme-base/_components";
+@import "../_extensions";
+
+:root {
+  --mc1: #1f1f1f;
+  --mc2: #372f24;
+  --mc2t: 55, 47, 36;
+  --mc3: #4a3f30;
+  --mc4: #ffeed9;
+  --mc5: #ffeed9;
+  --mc6: #d6c4aa;
+  --mc7: #dcc48c;
+  --mc8: #372f24;
+  --mc9: #4a3f30;
+  --mc10: #7e5700;
+  --mc11: #ffeed9;
+  --mc12: #ffeed9;
+  --mc13: #ffeed9;
+  --mc14: #dcc48c;
+  --mc15: #d6c4aa;
+  --mc16: #6a5c48;
+  --mc17: #6a5c48;
+  --mc18: #6a5c48;
+  --mc19: #dcc48c;
+  --mc20: #dcc48c;
+  --mc21: #1f1f1f;
+  --mc22: rgba(0, 0, 0, 0.6);
+  --mc23: #ffffff;
+  --mc24: #b6c5f9;
+  --mc25: #ffd5bd;
+  --mc26: #ffcd6c;
+  --mc27: #422c00;
+  --mc28: #372f24;
+  --mc28: #3c2c3;
+  color-scheme: dark;
+}

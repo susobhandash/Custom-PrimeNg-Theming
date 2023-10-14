@@ -1,35 +1,19 @@
   // Theme Specific Variables
-$primaryColor: #006874;//14
-$primaryDarkColor: #3e6374;//15
-$primaryDarkerColor: #006874;//14
-$primaryTextColor: #e9f2f4;//2
+$primaryColor: #007fb0 !default;//14
+$primaryDarkColor: #4a607c !default;//15
+$primaryDarkerColor: #007fb0 !default;//14
+$primaryTextColor: #ebf1f8 !default;//2
+$primaryLightColor: #4a607c !default; // 15
+$primaryAccentBg: #007fb0 !default; // 14
 
-$colors: (
-  "blue": #2196f3,
-  "green": #4caf50,
-  "yellow": #fbc02d,
-  "cyan": #00bcd4,
-  "pink": #e91e63,
-  "indigo": #3f51b5,
-  "teal": #009688,
-  "orange": #f57c00,
-  "bluegray": #607d8b,
-  "purple": #9c27b0,
-  "red": #ff4032,
-  "primary": $primaryColor,
-);
+$highlightBg: $primaryColor !default;
+$highlightTextColor: $primaryTextColor !default;
+$highlightFocusBg: darken($primaryColor, 8%) !default;
 
-// Mandatory Designer Variables
-@import "./variables/general";
-@import "./variables/form";
-@import "./variables/button";
-@import "./variables/panel";
-@import "./variables/_data";
-@import "./variables/_overlay";
-@import "./variables/_message";
-@import "./variables/_menu";
-@import "./variables/_media";
-@import "./variables/_misc";
+@import "../light-variables";
+@import "../fonts";
+@import "../../../theme-base/_components";
+@import "../_extensions";
 
 :root {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
@@ -38,34 +22,34 @@ $colors: (
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
   --mc1: #ffffff;
-  --mc2: #e9f2f4;
-  --mc2t: 233, 242, 244;
-  --mc3: #d4e6e9;
-  --mc4: #001f24;
-  --mc5: #001f24;
-  --mc6: #3e6374;
-  --mc7: #006874;
-  --mc8: #d4e6e9;
-  --mc9: #c2dce0;
-  --mc10: #8bd3df;
-  --mc11: #001f24;
-  --mc12: #001f24;
-  --mc13: #001f24;
-  --mc14: #006874;
-  --mc15: #3e6374;
-  --mc16: #a6ccdf;
-  --mc17: #a6ccdf;
-  --mc18: #a6ccdf;
-  --mc19: #008392;
-  --mc20: #00a0b0;
+  --mc2: #ebf1f8;
+  --mc2t: 235, 241, 248;
+  --mc3: #d7e4ef;
+  --mc4: #001e2d;
+  --mc5: #001e2d;
+  --mc6: #4a607c;
+  --mc7: #007fb0;
+  --mc8: #d7e4ef;
+  --mc9: #c5d8e8;
+  --mc10: #81cfff;
+  --mc11: #001e2d;
+  --mc12: #001e2d;
+  --mc13: #001e2d;
+  --mc14: #007fb0;
+  --mc15: #4a607c;
+  --mc16: #b2c8e8;
+  --mc17: #b2c8e8;
+  --mc18: #b2c8e8;
+  --mc19: #009bd5;
+  --mc20: #009bd5;
   --mc21: #ffffff;
   --mc22: rgba(0, 0, 0, 0.6);
   --mc23: #ffffff;
-  --mc24: #f9b2ce;
-  --mc25: #a6ccdf;
+  --mc24: #ffb2be;
+  --mc25: #b2c8e8;
   --mc26: #5fbaff;
-  --mc27: #00363d;
-  --mc28: #e2f4f7;
+  --mc27: #00344b;
+  --mc28: #e6f2fd;
   --surface-a: var(--mc1);
   --surface-b: var(--mc2);
   --surface-c: var(--mc2);
@@ -74,8 +58,8 @@ $colors: (
   --surface-f: var(--mc1)
   --text-color: #212529;
   --text-color-secondary: #6c757d;
-  --primary-color: #006874; // Var 14
-  --primary-color-text: #e9f2f4; // Var 2
+  --primary-color: #007fb0; // Var
+  --primary-color-text: #ebf1f8; // Var
   --surface-0: var(--mc1);
   --surface-50: #fafafa;
   --surface-100: #f5f5f5;
@@ -100,10 +84,6 @@ $colors: (
   --highlight-bg: #{$highlightBg};
   --highlight-text-color: #{$highlightTextColor};
   --focus-ring: #{$focusShadow};
-  color-scheme: dark;
 }
 
-@import './_fonts';
-@import '../../theme-base/_components';
-@import './_extensions';
 
